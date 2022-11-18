@@ -7,10 +7,10 @@ class Bike
 
   attr_reader :id, :color, :price, :weight
 
-  def initialize(id, color, price)
-    @id = id
-    @color = color
-    @price = price
+  def initialize(args)
+    @id = args[:id]
+    @color = args[:color]
+    @price = args[:price]
     @weight = STANDARD_WEIGHT
   end 
 end

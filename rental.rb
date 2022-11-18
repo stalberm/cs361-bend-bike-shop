@@ -2,9 +2,14 @@ class Rental
 
   attr_reader :bike, :luggage
 
-  def initialize(bike, luggage)
-    @bike = bike
-    @luggage = luggage
+#   def initialize(bike, luggage)
+#     @bike = bike
+#     @luggage = luggage
+#   end
+
+  def initialize(args)
+    @bike = args[:bike]
+    @luggage = args[:luggage]
   end
 
   def price
